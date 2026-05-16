@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc - Privacy Policy</title>
+    <meta name="description" content="Arc privacy policy. How your data is handled.">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #f7f6f4;
+            color: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+        }
+
+        main {
+            margin: 0 auto;
+            max-width: 680px;
+            padding: 56px 24px 72px;
+        }
+
+        h1 {
+            font-size: 32px;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 18px;
+            letter-spacing: -0.01em;
+            margin: 36px 0 12px;
+        }
+
+        p, li {
+            color: #555;
+            font-size: 15px;
+        }
+
+        p { margin-bottom: 12px; }
+        ul { margin: 0 0 12px 20px; }
+        li { margin-bottom: 6px; }
+        a { color: #1a1a1a; }
+        strong { color: #1a1a1a; }
+
+        .subtitle {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 44px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Last updated: May 16, 2026</p>
+
+    <h2>What Arc Collects</h2>
+    <p>Arc stores your personal goal data locally on your device using Apple's SwiftData framework. This includes:</p>
+    <ul>
+        <li>Goals, plans, and tasks you create</li>
+        <li>Time tracking sessions</li>
+        <li>Notes, weekly commitments, and preferences</li>
+    </ul>
+    <p>This personal goal data stays on your device unless you use the AI chat feature.</p>
+
+    <h2>AI Chat</h2>
+    <p>When you use the per-goal AI assistant, your messages and goal context are sent to a Supabase Edge Function, which forwards them to OpenAI for processing. These messages are used solely to generate a response and are not stored on our servers.</p>
+    <p>OpenAI may process your messages according to their own privacy policy. No conversation history is stored server-side by Arc.</p>
+
+    <h2>Anonymous Authentication</h2>
+    <p>Arc creates an anonymous device-level session via Supabase Auth for rate limiting and app functionality. This session:</p>
+    <ul>
+        <li>Contains no personally identifiable information (PII)</li>
+        <li>Is not linked to any email, phone number, or account</li>
+        <li>Is used to protect the AI chat service and keep backend requests reliable</li>
+    </ul>
+
+    <h2>Product Analytics</h2>
+    <p>Arc uses PostHog to understand onboarding flow, paywall events, and broad product interaction patterns. Analytics events are tied to a randomly generated install ID, not your name, email, Apple ID, or advertising identifier.</p>
+    <p>PostHog is configured for manual product analytics only. Arc does not use advertising tracking, IDFA, cross-app tracking, session replay, or automatic screen recording.</p>
+
+    <h2>Subscriptions and Purchases</h2>
+    <p>Arc uses Apple StoreKit and Superwall to present paywalls, manage subscription status, and support the free trial. Purchase processing is handled by Apple. Arc uses subscription status only to unlock or gate app access.</p>
+
+    <h2>Notifications</h2>
+    <p>Arc may request permission to send local notifications for daily nudges and per-goal reminders. All notifications are scheduled locally on your device. No push notification infrastructure or server is involved.</p>
+
+    <h2>Third-Party Services</h2>
+    <ul>
+        <li><strong>Supabase</strong> - Edge Functions hosting and anonymous auth. <a href="https://supabase.com/privacy">Privacy Policy</a></li>
+        <li><strong>OpenAI</strong> - AI chat processing. <a href="https://openai.com/privacy">Privacy Policy</a></li>
+        <li><strong>PostHog</strong> - product analytics. <a href="https://posthog.com/privacy">Privacy Policy</a></li>
+        <li><strong>Superwall</strong> - paywall and subscription management. <a href="https://superwall.com/privacy">Privacy Policy</a></li>
+    </ul>
+    <p>Arc does not sell your data and does not use third-party services for advertising tracking.</p>
+
+    <h2>Data Deletion</h2>
+    <p>Your goals, tasks, notes, and time logs are stored locally. Deleting the Arc app from your device permanently deletes that local data. Anonymous backend and analytics identifiers are not tied to an account you can log into.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this privacy policy, contact: <a href="mailto:arc@synced.design">arc@synced.design</a></p>
+</main>
+</body>
+</html>
