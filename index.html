@@ -55,7 +55,7 @@
 <body>
 <main>
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Last updated: May 16, 2026</p>
+    <p class="subtitle">Last updated: June 15, 2026</p>
 
     <h2>What Arc Collects</h2>
     <p>Arc stores your personal goal data locally on your device using Apple's SwiftData framework. This includes:</p>
@@ -80,10 +80,15 @@
 
     <h2>Product Analytics</h2>
     <p>Arc uses PostHog to understand onboarding flow, paywall events, and broad product interaction patterns. Analytics events are tied to a randomly generated install ID, not your name, email, Apple ID, or advertising identifier.</p>
-    <p>PostHog is configured for manual product analytics only. Arc does not use advertising tracking, IDFA, cross-app tracking, session replay, or automatic screen recording.</p>
+    <p>PostHog is configured for manual product analytics only — no session replay and no automatic screen recording. PostHog does not receive your advertising identifier. Advertising attribution is handled separately, and only with your permission — see Advertising and Attribution below.</p>
 
     <h2>Subscriptions and Purchases</h2>
     <p>Arc uses Apple StoreKit and Superwall to present paywalls, manage subscription status, and support the free trial. Purchase processing is handled by Apple. Arc uses subscription status only to unlock or gate app access.</p>
+
+    <h2>Advertising and Attribution</h2>
+    <p>Arc uses the TikTok Business SDK to measure how well our advertising performs — for example, whether someone who saw an Arc ad on TikTok went on to install the app, start a free trial, or subscribe.</p>
+    <p>For this, Arc shares certain events — such as app installs, trial starts, and purchases — with TikTok. <strong>Only if you grant permission through Apple's App Tracking Transparency prompt</strong> does Arc also share your device's advertising identifier (IDFA). If you decline, your advertising identifier is not shared. You can change this at any time in iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking.</p>
+    <p>This is the only third-party advertising or attribution service Arc uses.</p>
 
     <h2>Notifications</h2>
     <p>Arc may request permission to send local notifications for daily nudges and per-goal reminders. All notifications are scheduled locally on your device. No push notification infrastructure or server is involved.</p>
@@ -94,8 +99,9 @@
         <li><strong>OpenAI</strong> - AI chat processing. <a href="https://openai.com/privacy">Privacy Policy</a></li>
         <li><strong>PostHog</strong> - product analytics. <a href="https://posthog.com/privacy">Privacy Policy</a></li>
         <li><strong>Superwall</strong> - paywall and subscription management. <a href="https://superwall.com/privacy">Privacy Policy</a></li>
+        <li><strong>TikTok Business SDK</strong> - advertising attribution and measurement. <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">Privacy Policy</a></li>
     </ul>
-    <p>Arc does not sell your data and does not use third-party services for advertising tracking.</p>
+    <p>Arc shares the limited advertising and attribution data described above with TikTok. Other than that, Arc does not sell or share your personal data with third parties for advertising.</p>
 
     <h2>Data Deletion</h2>
     <p>Your goals, tasks, notes, and time logs are stored locally. Deleting the Arc app from your device permanently deletes that local data. Anonymous backend and analytics identifiers are not tied to an account you can log into.</p>
